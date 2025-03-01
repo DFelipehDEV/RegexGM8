@@ -1,0 +1,735 @@
+{
+	"name": "RegexGM",
+	"folder": "gm82",
+	"version": "1.0.1",
+	"author": "precisamento, DFelipehDEV",
+	"date": "01/03/2025",
+	"license": "Free to use, also for commercial games.",
+	"description": "",
+	"helpfile": "",
+	"hidden": false,
+	"dependencies": [],
+	"files": [
+		{
+			"filename": "RegexGM.dll",
+			"origname": "RegexGM.dll",
+			"kind": 1,
+			"init": "",
+			"final": "",
+			"functions": [
+				{
+					"name": "regex_create",
+					"extname": "RegexCreate",
+					"calltype": 12,
+					"helpline": "regex_create(pattern, regex_options, timeout)",
+					"hidden": false,
+					"argtypes": [
+						1,
+						2,
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "regex_destroy_id",
+					"extname": "DestroyId",
+					"calltype": 12,
+					"helpline": "regex_destroy_id(id)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "regex_destroy_all",
+					"extname": "DestroyAll",
+					"calltype": 12,
+					"helpline": "regex_destroy_all()",
+					"hidden": false,
+					"argtypes": [],
+					"returntype": 2
+				},
+				{
+					"name": "regex_matches_json",
+					"extname": "MatchesJson",
+					"calltype": 12,
+					"helpline": "regex_matches_json(regex_id, input, json_options)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						1,
+						2
+					],
+					"returntype": 1
+				},
+				{
+					"name": "regex_matches_from_json",
+					"extname": "MatchesFromJson",
+					"calltype": 12,
+					"helpline": "regex_matches_from_json(regex_id, input, start_at, json_options)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						1,
+						2,
+						2
+					],
+					"returntype": 1
+				},
+				{
+					"name": "regex_is_match",
+					"extname": "IsMatch",
+					"calltype": 12,
+					"helpline": "regex_is_match(regex_id, input)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						1
+					],
+					"returntype": 2
+				},
+				{
+					"name": "regex_is_match_from",
+					"extname": "IsMatchFrom",
+					"calltype": 12,
+					"helpline": "regex_is_match_from(regex_id, input, start_at)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						1,
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "regex_match",
+					"extname": "Match",
+					"calltype": 12,
+					"helpline": "regex_match(regex_id, input)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						1
+					],
+					"returntype": 2
+				},
+				{
+					"name": "regex_match_json",
+					"extname": "MatchJson",
+					"calltype": 12,
+					"helpline": "regex_match_json(regex_id, input, json_options)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						1,
+						2
+					],
+					"returntype": 1
+				},
+				{
+					"name": "regex_match_from",
+					"extname": "MatchFrom",
+					"calltype": 12,
+					"helpline": "regex_match_from(regex_id, input, start_at)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						1,
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "regex_match_from_json",
+					"extname": "MatchFromJson",
+					"calltype": 12,
+					"helpline": "regex_match_from_json(regex_id, input, start_at, json_option)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						1,
+						2,
+						2
+					],
+					"returntype": 1
+				},
+				{
+					"name": "match_get_next_match",
+					"extname": "MatchGetNextMatch",
+					"calltype": 12,
+					"helpline": "match_get_next_match(match_id)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "match_get_index",
+					"extname": "MatchGetIndex",
+					"calltype": 12,
+					"helpline": "match_get_index(match_id)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "match_get_length",
+					"extname": "MatchGetLength",
+					"calltype": 12,
+					"helpline": "match_get_length(match_id)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "match_get_value",
+					"extname": "MatchGetValue",
+					"calltype": 12,
+					"helpline": "match_get_value(match_id)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 1
+				},
+				{
+					"name": "match_get_groups_json",
+					"extname": "MatchGetGroupsJson",
+					"calltype": 12,
+					"helpline": "match_get_groups_json(match_id, json_options)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						2
+					],
+					"returntype": 1
+				},
+				{
+					"name": "match_get_group_by_name",
+					"extname": "MatchGetGroupByName",
+					"calltype": 12,
+					"helpline": "match_get_group_by_name(match_id, group_name)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						1
+					],
+					"returntype": 2
+				},
+				{
+					"name": "match_get_group_by_name_json",
+					"extname": "MatchGetGroupByNameJson",
+					"calltype": 12,
+					"helpline": "match_get_group_by_name_json(match_id, group_name, json_options)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						1,
+						2
+					],
+					"returntype": 1
+				},
+				{
+					"name": "match_get_group_by_index",
+					"extname": "MatchGetGroupByIndex",
+					"calltype": 12,
+					"helpline": "match_get_group_by_index(match_id, group_index)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "match_get_group_by_index_json",
+					"extname": "MatchGetGroupByIndexJson",
+					"calltype": 12,
+					"helpline": "match_get_group_by_index_json(match_id, group_index, json_options)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						2,
+						2
+					],
+					"returntype": 1
+				},
+				{
+					"name": "match_get_group_count",
+					"extname": "MatchGetGroupCount",
+					"calltype": 12,
+					"helpline": "match_get_group_count(match_id)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "group_get_index",
+					"extname": "GroupGetIndex",
+					"calltype": 12,
+					"helpline": "group_get_index(group_id)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "group_get_length",
+					"extname": "GroupGetLength",
+					"calltype": 12,
+					"helpline": "group_get_length(group_id)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "group_get_name",
+					"extname": "GroupGetName",
+					"calltype": 12,
+					"helpline": "group_get_name(group_id)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 1
+				},
+				{
+					"name": "group_get_success",
+					"extname": "GroupGetSuccess",
+					"calltype": 12,
+					"helpline": "group_get_success(group_id)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "group_get_value",
+					"extname": "GroupGetValue",
+					"calltype": 12,
+					"helpline": "group_get_value(group_id)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 1
+				},
+				{
+					"name": "group_get_captures_json",
+					"extname": "GroupGetCapturesJson",
+					"calltype": 12,
+					"helpline": "group_get_captures_json(group_id)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 1
+				},
+				{
+					"name": "group_get_capture_count",
+					"extname": "GroupGetCaptureCount",
+					"calltype": 12,
+					"helpline": "group_get_capture_count(group_id)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "group_get_capture",
+					"extname": "GroupGetCapture",
+					"calltype": 12,
+					"helpline": "group_get_capture(group_id, capture_index)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "group_get_capture_json",
+					"extname": "GroupGetCaptureJson",
+					"calltype": 12,
+					"helpline": "group_get_capture_json(group_id, capture_index)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						2
+					],
+					"returntype": 1
+				},
+				{
+					"name": "capture_get_index",
+					"extname": "CaptureGetIndex",
+					"calltype": 12,
+					"helpline": "capture_get_index(capture_id)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "capture_get_length",
+					"extname": "CaptureGetLength",
+					"calltype": 12,
+					"helpline": "capture_get_length(capture_id)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "capture_get_value",
+					"extname": "CaptureGetValue",
+					"calltype": 12,
+					"helpline": "capture_get_value(capture_id)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 1
+				},
+				{
+					"name": "regex_replace",
+					"extname": "Replace",
+					"calltype": 12,
+					"helpline": "regex_replace(regex_id, input, replacement)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						1,
+						1
+					],
+					"returntype": 1
+				},
+				{
+					"name": "regex_replace_count",
+					"extname": "ReplaceNumber",
+					"calltype": 12,
+					"helpline": "regex_replace_count(regex_id, input, replacement, count)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						1,
+						1,
+						2
+					],
+					"returntype": 1
+				},
+				{
+					"name": "regex_replace_from",
+					"extname": "ReplaceFrom",
+					"calltype": 12,
+					"helpline": "regex_replace_from(regex_id, input, replacement, start_at)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						1,
+						1,
+						2
+					],
+					"returntype": 1
+				},
+				{
+					"name": "_regex_split",
+					"extname": "Split",
+					"calltype": 12,
+					"helpline": "_regex_split(regex_id, input)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						1
+					],
+					"returntype": 2
+				},
+				{
+					"name": "regex_split_json",
+					"extname": "SplitJson",
+					"calltype": 12,
+					"helpline": "regex_split_json(regex_id, input)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						1
+					],
+					"returntype": 1
+				},
+				{
+					"name": "_regex_split_count",
+					"extname": "SplitCount",
+					"calltype": 12,
+					"helpline": "_regex_split_count(regex_id, input, count)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						1,
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "regex_split_count_json",
+					"extname": "SplitCountJson",
+					"calltype": 12,
+					"helpline": "regex_split_count_json(regex_id, input, count)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						1,
+						2
+					],
+					"returntype": 1
+				},
+				{
+					"name": "_regex_split_from",
+					"extname": "SplitFrom",
+					"calltype": 12,
+					"helpline": "_regex_split_from(regex_id, input, start_at)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						1,
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "regex_split_from_json",
+					"extname": "SplitFromJson",
+					"calltype": 12,
+					"helpline": "regex_split_from_json(regex_id, input, start_at)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						1,
+						2
+					],
+					"returntype": 1
+				},
+				{
+					"name": "_split_get_size",
+					"extname": "SplitGetSize",
+					"calltype": 12,
+					"helpline": "_split_get_size(split_id)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "_split_get_count",
+					"extname": "SplitGetCount",
+					"calltype": 12,
+					"helpline": "_split_get_count(split_id)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "_split_fill_buffer",
+					"extname": "SplitFillBuffer",
+					"calltype": 12,
+					"helpline": "_split_fill_buffer(split_id, buffer_address)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						1
+					],
+					"returntype": 2
+				},
+				{
+					"name": "regex_get_cache_size",
+					"extname": "RegexGetCacheSize",
+					"calltype": 12,
+					"helpline": "regex_get_cache_size()",
+					"hidden": false,
+					"argtypes": [],
+					"returntype": 2
+				},
+				{
+					"name": "regex_set_cache_size",
+					"extname": "RegexSetCacheSize",
+					"calltype": 12,
+					"helpline": "regex_set_cache_size(size)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "_split_get_index",
+					"extname": "SplitGetIndex",
+					"calltype": 12,
+					"helpline": "_split_get_index(split_id, index)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						2
+					],
+					"returntype": 1
+				},
+				{
+					"name": "match_get_result",
+					"extname": "MatchGetResult",
+					"calltype": 12,
+					"helpline": "match_get_result(match_id, format)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						1
+					],
+					"returntype": 1
+				},
+				{
+					"name": "regex_matches",
+					"extname": "Matches",
+					"calltype": 12,
+					"helpline": "regex_matches(regex_id, input)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						1
+					],
+					"returntype": 2
+				},
+				{
+					"name": "regex_matches_from",
+					"extname": "MatchesFrom",
+					"calltype": 12,
+					"helpline": "regex_matches_from(regex_id, input, start_at)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						1,
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "matches_get_count",
+					"extname": "MatchesGetCount",
+					"calltype": 12,
+					"helpline": "matches_get_count(matches_id)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "matches_get_match",
+					"extname": "MatchesGetMatch",
+					"calltype": 12,
+					"helpline": "matches_get_match(matches_id, index)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "_regex_split_from_count",
+					"extname": "SplitFromCount",
+					"calltype": 12,
+					"helpline": "_regex_split_from_count(regex_id, input, count, start_at)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						1,
+						2,
+						2
+					],
+					"returntype": 2
+				}
+			],
+			"constants": [
+				{
+					"name": "RO_NONE",
+					"value": "0",
+					"hidden": false
+				},
+				{
+					"name": "RO_IGNORE_CASE",
+					"value": "1",
+					"hidden": false
+				},
+				{
+					"name": "RO_MULTILINE",
+					"value": "2",
+					"hidden": false
+				},
+				{
+					"name": "RO_EXPLICIT_CAPTURE",
+					"value": "4",
+					"hidden": false
+				},
+				{
+					"name": "RO_COMPILED",
+					"value": "8",
+					"hidden": false
+				},
+				{
+					"name": "RO_SINGLELINE",
+					"value": "16",
+					"hidden": false
+				},
+				{
+					"name": "RO_IGNORE_PATTERN_WHITESPACE",
+					"value": "32",
+					"hidden": false
+				},
+				{
+					"name": "RO_RIGHT_TO_LEFT",
+					"value": "64",
+					"hidden": false
+				},
+				{
+					"name": "RO_ECMA_SCRIPT",
+					"value": "256",
+					"hidden": false
+				},
+				{
+					"name": "RO_CULTURE_INVARIANT",
+					"value": "512",
+					"hidden": false
+				},
+				{
+					"name": "JO_NONE",
+					"value": "0",
+					"hidden": false
+				},
+				{
+					"name": "JO_GROUPS",
+					"value": "1",
+					"hidden": false
+				},
+				{
+					"name": "JO_CAPTURES",
+					"value": "3",
+					"hidden": false
+				}
+			]
+		}
+	]
+}
