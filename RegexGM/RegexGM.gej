@@ -626,6 +626,17 @@
 					"returntype": 2
 				},
 				{
+					"name": "regex_get_pattern",
+					"extname": "RegexGetPattern",
+					"calltype": 12,
+					"helpline": "regex_get_pattern(regex_id)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 1
+				},
+				{
 					"name": "matches_get_count",
 					"extname": "MatchesGetCount",
 					"calltype": 12,

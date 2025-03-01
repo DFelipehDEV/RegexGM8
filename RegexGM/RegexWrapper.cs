@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Runtime.InteropServices;
+using System.Reflection;
 
 namespace RegexGM
 {
@@ -25,9 +26,17 @@ namespace RegexGM
         [DllExport("RegexCreate", CallingConvention.Cdecl)]
         public static double RegexCreate(string pattern, double options, double timeout)
         {
-            var regex = new Regex(pattern, (RegexOptions)options, TimeSpan.FromMilliseconds(timeout));
-            return Add(regex);
+            try
+            {
+                var regex = new Regex(pattern, (RegexOptions)options, TimeSpan.FromMilliseconds(timeout));
+                return Add(regex);
+            }
+            catch (ArgumentException)
+            {
+                return -1;
+            }
         }
+
 
         /// <summary>
         /// Destroys a created object.
@@ -138,6 +147,24 @@ namespace RegexGM
             try
             {
                 return MatchCollectionToJson(GetRegex(regex_id).Matches(input, (int)startat), (JsonOptions)json_options);
+            }
+            catch (RegexMatchTimeoutException)
+            {
+                return string.Empty;
+            }
+        }
+
+        /// <summary>
+        /// Returns the pattern of the regex.
+        /// </summary>
+        /// <param name="regex_id">The id of the regex to use.</param>
+        /// <returns>String (Regex pattern)</returns>
+        [DllExport("RegexGetPattern", CallingConvention.Cdecl)]
+        public static string RegexGetPattern(double regex_id)
+        {
+            try
+            {
+                return GetRegex(regex_id).ToString();
             }
             catch (RegexMatchTimeoutException)
             {
